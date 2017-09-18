@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://lisanpeng.github.io/lsp-hexo-blog">
-  <title>Archives: 2016/10 | LiSanpeng&#39;s Blog</title>
+  <title>npm源切换 | LiSanpeng&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="LiSanpeng&#39;s Blog">
-<meta property="og:url" content="https://lisanpeng.github.io/lsp-hexo-blog/archives/2016/10/index.html">
+  <meta name="description" content="再次吐槽下万恶的墙。使用npm install切换源时，可使用下面的方法： 安装 1$ npm install -g nrm">
+<meta name="keywords" content="npm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="npm源切换">
+<meta property="og:url" content="https://lisanpeng.github.io/lsp-hexo-blog/2017/09/15/2017-09-15-npm源设置/index.html">
 <meta property="og:site_name" content="LiSanpeng&#39;s Blog">
+<meta property="og:description" content="再次吐槽下万恶的墙。使用npm install切换源时，可使用下面的方法： 安装 1$ npm install -g nrm">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-18T09:09:59.934Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LiSanpeng&#39;s Blog">
+<meta name="twitter:title" content="npm源切换">
+<meta name="twitter:description" content="再次吐槽下万恶的墙。使用npm install切换源时，可使用下面的方法： 安装 1$ npm install -g nrm">
   
     <link rel="alternative" href="/atom.xml" title="LiSanpeng&#39;s Blog" type="application/atom+xml">
   
@@ -136,71 +141,162 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-2017-09-15-npm源设置" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/lsp-hexo-blog/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/lsp-hexo-blog/2016/10/12/2016-10-12-欢迎来到我的github-page/" class="archive-article-date">
-  	<time datetime="2016-10-11T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-12</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/lsp-hexo-blog/2016/10/12/2016-10-12-欢迎来到我的github-page/">欢迎来到我的github page</a>
+    <h1 class="article-title" itemprop="name">
+      npm源切换
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/lsp-hexo-blog/2017/09/15/2017-09-15-npm源设置/" class="archive-article-date">
+  	<time datetime="2017-09-14T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>再次吐槽下万恶的墙。使用npm install切换源时，可使用下面的方法：</p>
+<p><strong>安装</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g nrm</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p><strong>例子</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$ nrm ls</div><div class="line"></div><div class="line">* npm -----  https://registry.npmjs.org/</div><div class="line">  cnpm ----  http://r.cnpmjs.org/</div><div class="line">  taobao --  https://registry.npm.taobao.org/</div><div class="line">  nj ------  https://registry.nodejitsu.com/</div><div class="line">  rednpm -- http://registry.mirror.cqupt.edu.cn</div><div class="line">  skimdb -- https://skimdb.npmjs.com/registry</div></pre></td></tr></table></figure></p>
+<p><strong>切换</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ nrm use cnpm  //switch registry to cnpm</div><div class="line"></div><div class="line">    Registry has been set to: http://r.cnpmjs.org/</div></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">github pages</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/lsp-hexo-blog/categories/github-blog//" class="article-tag-list-link color2">github blog</a>
+        			<a href="/lsp-hexo-blog/categories/linux//" class="article-tag-list-link color1">linux</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://lisanpeng.github.io/lsp-hexo-blog/2017/09/15/2017-09-15-npm源设置/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/lsp-hexo-blog/2017/09/18/hexo blog填坑记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hexo Blog填坑记
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/lsp-hexo-blog/2017/02/20/2017-02-20-Aspnet AJAX/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Asp.net Ajax相关</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -223,8 +319,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
@@ -302,6 +398,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">npm</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
             
             <div class="clearfix"></div>

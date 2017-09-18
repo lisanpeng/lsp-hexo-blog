@@ -6,20 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://lisanpeng.github.io/lsp-hexo-blog">
-  <title>Asp.net Ajax相关 | LiSanpeng&#39;s Blog</title>
+  <title>Archives: 2017/2 | LiSanpeng&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本文记录了在ASP.NET项目中使用Ajax的例子">
-<meta name="keywords" content="Asp.net Ajax">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Asp.net Ajax相关">
-<meta property="og:url" content="https://lisanpeng.github.io/lsp-hexo-blog/2017/09/18/2017-02-20-Aspnet AJAX/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="LiSanpeng&#39;s Blog">
+<meta property="og:url" content="https://lisanpeng.github.io/lsp-hexo-blog/archives/2017/02/index.html">
 <meta property="og:site_name" content="LiSanpeng&#39;s Blog">
-<meta property="og:description" content="本文记录了在ASP.NET项目中使用Ajax的例子">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-09-18T05:17:43.374Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Asp.net Ajax相关">
-<meta name="twitter:description" content="本文记录了在ASP.NET项目中使用Ajax的例子">
+<meta name="twitter:title" content="LiSanpeng&#39;s Blog">
   
     <link rel="alternative" href="/atom.xml" title="LiSanpeng&#39;s Blog" type="application/atom+xml">
   
@@ -141,48 +136,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-2017-02-20-Aspnet AJAX" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Asp.net Ajax相关
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/lsp-hexo-blog/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/lsp-hexo-blog/2017/02/20/2017-02-20-Aspnet AJAX/" class="archive-article-date">
+  	<time datetime="2017-02-19T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-20</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/lsp-hexo-blog/2017/02/20/2017-02-20-Aspnet AJAX/">Asp.net Ajax相关</a>
     </h1>
   
 
-        
-        <a href="/lsp-hexo-blog/2017/09/18/2017-02-20-Aspnet AJAX/" class="archive-article-date">
-  	<time datetime="2017-09-18T06:11:01.361Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>本文记录了在ASP.NET项目中使用Ajax的例子</p>
-<a id="more"></a>
-<blockquote>
-<p>Ajax调用后台方法 - 前台js</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">recoverPage</span>(<span class="params"></span>) </span>&#123;</div><div class="line">            <span class="keyword">var</span> rolevalue = $(<span class="string">"#rolevalue"</span>).val();</div><div class="line">            <span class="keyword">var</span> rolecode = $(<span class="string">"#rolecode"</span>).val();</div><div class="line"></div><div class="line">            $.ajax(&#123;</div><div class="line">                type: <span class="string">"POST"</span>,</div><div class="line">                url: <span class="string">"sendMsg.aspx/recoverPage"</span>,</div><div class="line">                data: <span class="string">"&#123;'rolecode':'"</span> + rolecode + <span class="string">"', 'rolevalue':'"</span> + rolevalue + <span class="string">"'&#125;"</span>,</div><div class="line">                datatype: <span class="string">"json"</span>,</div><div class="line">                contentType: <span class="string">"application/json;charset=utf-8"</span>,</div><div class="line">                error: <span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</div><div class="line"></div><div class="line">                &#125;,</div><div class="line">                success: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</div><div class="line">                    $.messager.show(&#123;</div><div class="line">                        title: <span class="string">'提示'</span>,</div><div class="line">                        msg: <span class="string">'页面恢复消息已发送'</span>,</div><div class="line">                        timeout: <span class="number">3000</span>,</div><div class="line">                        showType: <span class="string">'show'</span></div><div class="line"></div><div class="line">                    &#125;);</div><div class="line">                &#125;</div><div class="line">            &#125;);</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
-<blockquote>
-<p>Ajax调用后台方法 - 后台cs</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">[WebMethod]</div><div class="line">public static void recoverPage(string rolecode, string rolevalue, string user,string hostname)</div><div class="line">&#123;</div><div class="line">	XmlDocument xmldoc = new XmlDocument();</div><div class="line">    xmldoc.LoadXml(fidsXml);</div><div class="line">	XmlNode headerNode = xmldoc.SelectSingleNode(&quot;FIDSMsg/Header&quot;);</div><div class="line">	headerNode.SelectSingleNode(&quot;Role&quot;).InnerText = rolecode;</div><div class="line">	headerNode.SelectSingleNode(&quot;CounterNumber&quot;).InnerText = rolevalue;</div><div class="line">	headerNode.SelectSingleNode(&quot;MsgSendTime&quot;).InnerText = DateTime.Now.ToString(&quot;yyyy-MM-ddTHH:mm:ss&quot;);</div><div class="line"></div><div class="line">	string[] args = new string[] &#123; &quot;0&quot;, xmldoc.OuterXml &#125;;</div><div class="line">	WSHelper.InvokeWebService(url, &quot;SendMessageToQueue&quot;, args);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<blockquote>
-<p>使用ajax提交表单</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#playAnnc"</span>).on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> annctype = $(<span class="string">"#anncType"</span>).combobox(<span class="string">'getValue'</span>);</div><div class="line">	<span class="keyword">var</span> user = $(<span class="string">"#hiddenUser"</span>).val();</div><div class="line">	<span class="keyword">var</span> dailyid = $(<span class="string">"#hiddenDailyid"</span>).val();</div><div class="line">	<span class="keyword">var</span> hostname = $(<span class="string">"#hiddenHostname"</span>).val();</div><div class="line">                <span class="keyword">if</span> (annctype != <span class="string">""</span>) &#123;</div><div class="line">                    <span class="keyword">if</span> (dailyid != <span class="string">""</span> ) &#123;</div><div class="line">                        $.ajax(&#123;</div><div class="line">                            type: <span class="string">"POST"</span>,</div><div class="line">                            url: <span class="string">"playAnnc.aspx?anncType="</span> + annctype + <span class="string">"&amp;u="</span> + user + <span class="string">"&amp;did="</span> + dailyid + <span class="string">"&amp;gate="</span> + gate + <span class="string">"&amp;hostname="</span> + hostname,</div><div class="line">                            data: $(<span class="string">'#formContent'</span>).serialize(),</div><div class="line">                            datatype: <span class="string">"json"</span>,</div><div class="line">                            error: <span class="function"><span class="keyword">function</span> (<span class="params">request</span>) </span>&#123;</div><div class="line">                            &#125;,</div><div class="line">                             success: <span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</div><div class="line">                                $.messager.show(&#123; <span class="attr">title</span>: <span class="string">'提示'</span>, <span class="attr">msg</span>: <span class="string">'消息已发送'</span>, <span class="attr">timeout</span>: <span class="number">3000</span>, <span class="attr">showType</span>: <span class="string">'show'</span> &#125;);</div><div class="line">                            &#125;</div><div class="line">                        &#125;);</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">            &#125;);</div></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -194,7 +177,7 @@
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -207,95 +190,66 @@
 	</div>
 
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://lisanpeng.github.io/lsp-hexo-blog/2017/09/18/2017-02-20-Aspnet AJAX/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
   
-<nav id="article-nav">
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/lsp-hexo-blog/2017/02/20/2017-02-20-CSharp Delegate/" class="archive-article-date">
+  	<time datetime="2017-02-19T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-20</time>
+</a>
+        </div>
+    	 
   
-  
-    <a href="/lsp-hexo-blog/2017/09/18/2017-02-20-CSharp Delegate/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">C# 带参数的delegate</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/lsp-hexo-blog/2017/02/20/2017-02-20-CSharp Delegate/">C# 带参数的delegate</a>
+    </h1>
   
 
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">C# delegate</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+          
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/lsp-hexo-blog/categories/C//" class="article-tag-list-link color3">C#</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+  
+    </div></section>
   
 
-  
-
-  
+    
 
 
           </div>
@@ -318,8 +272,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
@@ -397,6 +351,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">npm</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
             
             <div class="clearfix"></div>
