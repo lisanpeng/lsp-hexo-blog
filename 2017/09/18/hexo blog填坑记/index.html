@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="LiSanpeng&#39;s Blog">
 <meta property="og:description" content="一开始一直使用jekyll，我的github主页 lisanpeng。都说hexo大法好，于是又折腾弄下，看效果 lsp-hexo-blog">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-09-18T09:09:30.750Z">
+<meta property="og:updated_time" content="2017-09-18T09:18:56.837Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Blog填坑记">
 <meta name="twitter:description" content="一开始一直使用jekyll，我的github主页 lisanpeng。都说hexo大法好，于是又折腾弄下，看效果 lsp-hexo-blog">
@@ -169,11 +169,12 @@
 <p>由于我的github主页已经部署了jekyll blog，只能新建repo后创建gh-pages分支。hexo页面位于gh-pages,github才能解析为网站。</p>
 <p>上传到github出现错误：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Permission denied (publickey).</div><div class="line">fatal: Could not read from remote repository.</div><div class="line">Please make sure you have the correct access rights</div><div class="line">and the repository exists.</div></pre></td></tr></table></figure></p>
 <p>需要在_config.yml文件中，找到deploy，然后按照如下修改：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:yourname/projectname.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
-<p>踩坑提醒<br>出现错误：<figure class="highlight plain"><figcaption><span>not found:git```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">需要安装一个扩展：</div></pre></td></tr></table></figure></p>
-<p>npm install hexo-deployer-git –save<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">然后就是部署：```hexo d -g</div></pre></td></tr></table></figure></p>
-<p>此时还出现上面的错误，没有人会告诉你这个是需要在gh-pages分支下执行的（一个巨大的坑）。</p>
+<p>踩坑提醒，出现以下错误：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">deloyer not found:git</div></pre></td></tr></table></figure></p>
+<p>需要安装一个扩展：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>然后就是部署：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d -g</div></pre></td></tr></table></figure></p>
+<p>此时还出现上面的错误，没有人会告诉你这个是<strong>需要在gh-pages分支下执行的</strong>（一个巨大的坑）。</p>
 <p>在根目录和themes目录下都有_config.yml，需要弄清楚配置的具体含义，包括根目录的设置等。</p>
-<p>hexo文章生成日期：使用jekyll-uno主题时，会自动根据文件名yyyy-mm-dd-xxxxxx(年-月-日-标题)来生成文章，hexo根下的_config.yml里定义了日期的格式，默认为:year/:month/:day/:title/,可以在文章markdown文件中添加类似于 date:2017/01/18，hexo generate时会按照这个时间生成目录及文章。</p>
+<p>hexo文章生成日期：<br>使用jekyll-uno主题时，会自动根据文件名yyyy-mm-dd-xxxxxx(年-月-日-标题)来生成文章，hexo根下的_config.yml里定义了日期的格式，默认为:year/:month/:day/:title/,可以在文章markdown文件中添加类似于 date:2017/01/18，hexo generate时会按照这个时间生成目录及文章。</p>
 
       
 
@@ -268,18 +269,9 @@
   
 <nav id="article-nav">
   
-    <a href="/lsp-hexo-blog/2017/09/18/2017-09-12-手机图片美化工具/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          iphone上的图片美化工具
-        
-      </div>
-    </a>
   
-  
-    <a href="/lsp-hexo-blog/2017/09/15/2017-09-15-npm源设置/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">npm源切换</div>
+    <a href="/lsp-hexo-blog/2017/09/15/2017-09-12-手机图片美化工具/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">iphone上的图片美化工具</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -409,6 +401,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">手机图片美化工具</a>
               </li>
             
             <div class="clearfix"></div>
