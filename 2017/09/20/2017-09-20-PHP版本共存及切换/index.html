@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://lisanpeng.github.io/lsp-hexo-blog">
-  <title>LiSanpeng&#39;s Blog</title>
+  <title>PHP 5.6和7版本切换 | LiSanpeng&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="LiSanpeng&#39;s Blog">
-<meta property="og:url" content="https://lisanpeng.github.io/lsp-hexo-blog/index.html">
+  <meta name="description" content="PHP已经升级到了7.0，想用CI做个简单的东西，由于CI暂不支持7，于是不得不进行降级。 一开始想着卸载7重装5.6，各种不成功。 终极解决办法（亲测可用）：让7和5.6共存，使用时用命令进行切换。1234567add-apt-repository ppa:ondrej/phpapt-get updateapt-get install php7.0 php5.6 php5.6-mysql">
+<meta name="keywords" content="PHP开发环境">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHP 5.6和7版本切换">
+<meta property="og:url" content="https://lisanpeng.github.io/lsp-hexo-blog/2017/09/20/2017-09-20-PHP版本共存及切换/index.html">
 <meta property="og:site_name" content="LiSanpeng&#39;s Blog">
+<meta property="og:description" content="PHP已经升级到了7.0，想用CI做个简单的东西，由于CI暂不支持7，于是不得不进行降级。 一开始想着卸载7重装5.6，各种不成功。 终极解决办法（亲测可用）：让7和5.6共存，使用时用命令进行切换。1234567add-apt-repository ppa:ondrej/phpapt-get updateapt-get install php7.0 php5.6 php5.6-mysql">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-20T04:36:45.396Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LiSanpeng&#39;s Blog">
+<meta name="twitter:title" content="PHP 5.6和7版本切换">
+<meta name="twitter:description" content="PHP已经升级到了7.0，想用CI做个简单的东西，由于CI暂不支持7，于是不得不进行降级。 一开始想着卸载7重装5.6，各种不成功。 终极解决办法（亲测可用）：让7和5.6共存，使用时用命令进行切换。1234567add-apt-repository ppa:ondrej/phpapt-get updateapt-get install php7.0 php5.6 php5.6-mysql">
   
     <link rel="alternative" href="/atom.xml" title="LiSanpeng&#39;s Blog" type="application/atom+xml">
   
@@ -136,16 +141,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-2017-09-20-PHP版本共存及切换" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-2017-09-20-PHP版本共存及切换" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/lsp-hexo-blog/2017/09/20/2017-09-20-PHP版本共存及切换/">PHP 5.6和7版本切换</a>
+    <h1 class="article-title" itemprop="name">
+      PHP 5.6和7版本切换
     </h1>
   
 
@@ -197,16 +200,75 @@
 
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/lsp-hexo-blog/2017/09/20/2017-09-20-PHP版本共存及切换/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://lisanpeng.github.io/lsp-hexo-blog/2017/09/20/2017-09-20-PHP版本共存及切换/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/lsp-hexo-blog/2017/09/18/hexo blog填坑记/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hexo Blog填坑记</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -217,392 +279,14 @@
 
 
 
-
   
-    <article id="post-hexo blog填坑记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/lsp-hexo-blog/2017/09/18/hexo blog填坑记/">Hexo Blog填坑记</a>
-    </h1>
   
 
-        
-        <a href="/lsp-hexo-blog/2017/09/18/hexo blog填坑记/" class="archive-article-date">
-  	<time datetime="2017-09-17T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>一开始一直使用jekyll，我的github主页 <a href="https://lisanpeng.github.io">lisanpeng</a>。<br>都说hexo大法好，于是又折腾弄下，看效果 <a href="https://lisanpeng.github.io/lsp-hexo-blog">lsp-hexo-blog</a></p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/lsp-hexo-blog/categories/github-hexo//" class="article-tag-list-link color2">github hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/lsp-hexo-blog/2017/09/18/hexo blog填坑记/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2017-09-12-手机图片美化工具" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/lsp-hexo-blog/2017/09/15/2017-09-12-手机图片美化工具/">iphone上的图片美化工具</a>
-    </h1>
   
 
-        
-        <a href="/lsp-hexo-blog/2017/09/15/2017-09-12-手机图片美化工具/" class="archive-article-date">
-  	<time datetime="2017-09-14T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>作为一个半吊子程序员，却有着一个摄影师的梦。</p>
-<p>平时么手机上拍的照片，使用工具稍微修修，立刻就有范儿了。</p>
-<p>推荐工具：<code>snapseed</code> <code>vsco</code></p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">手机图片美化工具</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/lsp-hexo-blog/categories/工具//" class="article-tag-list-link color3">工具</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/lsp-hexo-blog/2017/09/15/2017-09-12-手机图片美化工具/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2017-09-15-npm源设置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/lsp-hexo-blog/2017/09/15/2017-09-15-npm源设置/">npm源切换</a>
-    </h1>
   
 
-        
-        <a href="/lsp-hexo-blog/2017/09/15/2017-09-15-npm源设置/" class="archive-article-date">
-  	<time datetime="2017-09-14T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>再次吐槽下万恶的墙。使用npm install切换源时，可使用下面的方法：</p>
-<p><strong>安装</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g nrm</div></pre></td></tr></table></figure>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/lsp-hexo-blog/categories/linux//" class="article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/lsp-hexo-blog/2017/09/15/2017-09-15-npm源设置/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2017-02-20-Aspnet AJAX" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/lsp-hexo-blog/2017/02/20/2017-02-20-Aspnet AJAX/">Asp.net Ajax相关</a>
-    </h1>
-  
-
-        
-        <a href="/lsp-hexo-blog/2017/02/20/2017-02-20-Aspnet AJAX/" class="archive-article-date">
-  	<time datetime="2017-02-19T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>本文记录了在ASP.NET项目中使用Ajax的例子</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Asp.net Ajax</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/lsp-hexo-blog/categories/Asp-net//" class="article-tag-list-link color3">Asp.net</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/lsp-hexo-blog/2017/02/20/2017-02-20-Aspnet AJAX/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2017-02-20-CSharp Delegate" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/lsp-hexo-blog/2017/02/20/2017-02-20-CSharp Delegate/">C# 带参数的delegate</a>
-    </h1>
-  
-
-        
-        <a href="/lsp-hexo-blog/2017/02/20/2017-02-20-CSharp Delegate/" class="archive-article-date">
-  	<time datetime="2017-02-19T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>记录了C#中带有参数的delegate的使用，委托的定义及调用。<br>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">C# delegate</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/lsp-hexo-blog/categories/C//" class="article-tag-list-link color3">C#</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/lsp-hexo-blog/2017/02/20/2017-02-20-CSharp Delegate/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -626,8 +310,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
